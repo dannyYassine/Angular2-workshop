@@ -1,0 +1,27 @@
+body {
+    margin: 0 20%;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.comment-body {
+    font-size: medium;
+    font-weight: 500;
+}
+
+.img-50 {
+    height: 50px;
+    width: 50px;
+}
+
+.img-100 {
+    height: 100px;
+    width: 100px;
+}
+
+.img-150 {
+    height: 150px;
+    width: 150px;
+}

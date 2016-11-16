@@ -1,0 +1,12 @@
+<div>
+    {{ shot.created_at | dabbbleDate:"MMM d, yyyy" }}
+    <img class="thumbnail" ng-src="{{ shot.images.hidpi ? shot.images.hidpi : shot.images.normal }}"/>
+</div>
+<div>
+    <h2>Comments</h2>
+    <ul>
+        <li ng-repeat="comment in comments">
+            <comment-reponse comment="comment"></comment-reponse>
+        </li>
+    </ul>
+</div>
