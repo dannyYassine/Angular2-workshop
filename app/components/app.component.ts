@@ -3,10 +3,12 @@
  */
 import { Component } from '@angular/core';
 import { CoursesComponent } from './courses.component'
+import {RouterOutlet, ActivatedRoute} from '@angular/router'
 
 @Component({
     selector: 'my-app',
-    template: '<h1>Hello Angular!</h1><courses></courses>',
+    templateUrl: 'partials/app_root.html',
     providers: [CoursesComponent]
 })
-export class AppComponent { }
+export class AppComponent {
+}

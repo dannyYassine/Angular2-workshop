@@ -1,3 +1,6 @@
+/**
+ * Created by dannyyassine on 2016-11-16.
+ */
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8,23 +11,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/**
- * Created by dannyyassine on 2016-11-15.
- */
 var core_1 = require('@angular/core');
-var courses_component_1 = require('./courses.component');
-var AppComponent = (function () {
-    function AppComponent() {
+var router_1 = require('@angular/router');
+var courses_component_1 = require('./components/courses.component');
+var routes = [
+    { path: '**', redirectTo: '/', pathMatch: 'full' },
+    { path: '', component: courses_component_1.CoursesComponent }
+];
+var AppRoutingModule = (function () {
+    function AppRoutingModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'partials/app_root.html',
-            providers: [courses_component_1.CoursesComponent]
+    AppRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [router_1.RouterModule.forRoot(routes)],
+            exports: [router_1.RouterModule]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], AppRoutingModule);
+    return AppRoutingModule;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.AppRoutingModule = AppRoutingModule;
+//# sourceMappingURL=app-routing.module.js.map
