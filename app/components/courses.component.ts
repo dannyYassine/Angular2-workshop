@@ -8,8 +8,8 @@ import {DribbbleService} from './../services/dribbble.service'
 
 @Component({
     selector: 'courses',
-    templateUrl: 'partials/shots_list.html',
-    providers: [CourseService, DribbbleService]
+    templateUrl: 'partials/course_list.html',
+    providers: [CourseService]
 })
 export class CoursesComponent {
     title:string = "Course title";
@@ -18,23 +18,11 @@ export class CoursesComponent {
     page = 1;
     courseService;
 
-    constructor(courseService:CourseService, private dribbbleService: DribbbleService) {
+    constructor(courseService:CourseService) {
         this.courseService = courseService
     }
 
     ngOnInit() {
         this.courses = this.courseService.getCourses();
-        this.dribbbleService.getShots().subscribe(json => {
-            this.shots = json;
-            this.page += 1;
-        });
     }
-
-    public loadNextPage() {
-        this.dribbbleService.getShots(this.page).subscribe(json => {
-            this.shots = this.shots.concat(json);
-            this.page += 1;
-        });
-    }
-
 }

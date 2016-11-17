@@ -1,7 +1,7 @@
 <div>
     <ul class="thumbnails">
         <li class="thumbnail col-lg-6" *ngFor="let shot of shots">
-            <a href="#/shots/{{ shot.id }}">
+            <a href="/">
                 <h2>{{ shot.user.name }}</h2>
                 <h4>{{ shot.title }}</h4>
                 <img src="{{ shot.images.hidpi ? shot.images.hidpi : shot.images.normal }}" height="300">

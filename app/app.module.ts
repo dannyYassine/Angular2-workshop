@@ -10,10 +10,11 @@ import { HttpModule } from '@angular/http';
 import {DribbbleService} from './services/dribbble.service'
 import {CourseService} from './services/course.service'
 import {AppRoutingModule} from './app-routing.module'
+import {DribbbleComponent} from './components/dribbble.component'
 
 @NgModule({
     imports:      [ BrowserModule, HttpModule, AppRoutingModule],
-    declarations: [ AppComponent, CoursesComponent ],
+    declarations: [ AppComponent, CoursesComponent, DribbbleComponent ],
     bootstrap:    [ AppComponent ],
     providers: [ CourseService, DribbbleService ]
 })

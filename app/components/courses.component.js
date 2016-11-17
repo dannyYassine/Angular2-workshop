@@ -13,36 +13,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var course_service_1 = require('./../services/course.service');
-var dribbble_service_1 = require('./../services/dribbble.service');
 var CoursesComponent = (function () {
-    function CoursesComponent(courseService, dribbbleService) {
-        this.dribbbleService = dribbbleService;
+    function CoursesComponent(courseService) {
         this.title = "Course title";
         this.page = 1;
         this.courseService = courseService;
     }
     CoursesComponent.prototype.ngOnInit = function () {
-        var _this = this;
         this.courses = this.courseService.getCourses();
-        this.dribbbleService.getShots().subscribe(function (json) {
-            _this.shots = json;
-            _this.page += 1;
-        });
-    };
-    CoursesComponent.prototype.loadNextPage = function () {
-        var _this = this;
-        this.dribbbleService.getShots(this.page).subscribe(function (json) {
-            _this.shots = _this.shots.concat(json);
-            _this.page += 1;
-        });
     };
     CoursesComponent = __decorate([
         core_1.Component({
             selector: 'courses',
-            templateUrl: 'partials/shots_list.html',
-            providers: [course_service_1.CourseService, dribbble_service_1.DribbbleService]
+            templateUrl: 'partials/course_list.html',
+            providers: [course_service_1.CourseService]
         }), 
-        __metadata('design:paramtypes', [course_service_1.CourseService, dribbble_service_1.DribbbleService])
+        __metadata('design:paramtypes', [course_service_1.CourseService])
     ], CoursesComponent);
     return CoursesComponent;
 }());

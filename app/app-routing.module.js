@@ -14,9 +14,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var courses_component_1 = require('./components/courses.component');
+var dribbble_component_1 = require('./components/dribbble.component');
 var routes = [
-    { path: '**', redirectTo: '/', pathMatch: 'full' },
-    { path: '', component: courses_component_1.CoursesComponent }
+    { path: 'dribbble', component: dribbble_component_1.DribbbleComponent },
+    { path: 'courses', component: courses_component_1.CoursesComponent },
+    { path: '**', redirectTo: '/dribbble', pathMatch: 'full' }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

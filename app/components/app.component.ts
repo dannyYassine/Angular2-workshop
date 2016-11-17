@@ -3,7 +3,7 @@
  */
 import { Component } from '@angular/core';
 import { CoursesComponent } from './courses.component'
-import {RouterOutlet, ActivatedRoute} from '@angular/router'
+import {RouterOutlet, ActivatedRoute, Router} from '@angular/router'
 
 @Component({
     selector: 'my-app',
@@ -11,4 +11,5 @@ import {RouterOutlet, ActivatedRoute} from '@angular/router'
     providers: [CoursesComponent]
 })
 export class AppComponent {
+    constructor(router: Router)
 }

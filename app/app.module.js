@@ -19,13 +19,14 @@ var http_1 = require('@angular/http');
 var dribbble_service_1 = require('./services/dribbble.service');
 var course_service_1 = require('./services/course.service');
 var app_routing_module_1 = require('./app-routing.module');
+var dribbble_component_1 = require('./components/dribbble.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, http_1.HttpModule, app_routing_module_1.AppRoutingModule],
-            declarations: [app_component_1.AppComponent, courses_component_1.CoursesComponent],
+            declarations: [app_component_1.AppComponent, courses_component_1.CoursesComponent, dribbble_component_1.DribbbleComponent],
             bootstrap: [app_component_1.AppComponent],
             providers: [course_service_1.CourseService, dribbble_service_1.DribbbleService]
         }), 
