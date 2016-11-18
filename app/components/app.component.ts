@@ -10,6 +10,9 @@ import {RouterOutlet, ActivatedRoute, Router} from '@angular/router'
     templateUrl: 'partials/app_root.html',
     providers: [CoursesComponent]
 })
+
 export class AppComponent {
-    constructor(router: Router)
+    constructor(router: Router) {
+
+    }
 }

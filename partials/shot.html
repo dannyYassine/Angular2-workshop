@@ -1,12 +1,13 @@
 <div>
-    {{ shot.created_at | dabbbleDate:"MMM d, yyyy" }}
-    <img class="thumbnail" ng-src="{{ shot.images.hidpi ? shot.images.hidpi : shot.images.normal }}"/>
+    <h2>Detail Shot</h2>
+    {{ shot.id | async }}
+    <div class="thumbnail">
+        <h2>{{ shot.user.name }}</h2>
+        <h4>{{ shot.title }}</h4>
+        <img src="{{ shot.images.hidpi ? shot.images.hidpi : shot.images.normal }}" height="300">
+    </div>
 </div>
 <div>
     <h2>Comments</h2>
-    <ul>
-        <li ng-repeat="comment in comments">
-            <comment-reponse comment="comment"></comment-reponse>
-        </li>
-    </ul>
+
 </div>

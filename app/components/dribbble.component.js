@@ -23,6 +23,7 @@ var DribbbleComponent = (function () {
         var _this = this;
         this.dribbbleService.getShots().subscribe(function (json) {
             _this.shots = json;
+            console.log(json);
             _this.page += 1;
         });
     };

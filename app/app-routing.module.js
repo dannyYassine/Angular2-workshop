@@ -15,10 +15,11 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var courses_component_1 = require('./components/courses.component');
 var dribbble_component_1 = require('./components/dribbble.component');
+var shot_component_1 = require("./components/shot.component");
 var routes = [
     { path: 'dribbble', component: dribbble_component_1.DribbbleComponent },
     { path: 'courses', component: courses_component_1.CoursesComponent },
-    { path: '**', redirectTo: '/dribbble', pathMatch: 'full' }
+    { path: 'dribbble/:id', component: shot_component_1.ShotComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

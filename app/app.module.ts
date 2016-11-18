@@ -11,10 +11,11 @@ import {DribbbleService} from './services/dribbble.service'
 import {CourseService} from './services/course.service'
 import {AppRoutingModule} from './app-routing.module'
 import {DribbbleComponent} from './components/dribbble.component'
+import {ShotComponent} from "./components/shot.component";
 
 @NgModule({
     imports:      [ BrowserModule, HttpModule, AppRoutingModule],
-    declarations: [ AppComponent, CoursesComponent, DribbbleComponent ],
+    declarations: [ AppComponent, CoursesComponent, DribbbleComponent, ShotComponent ],
     bootstrap:    [ AppComponent ],
     providers: [ CourseService, DribbbleService ]
 })

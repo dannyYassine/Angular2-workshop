@@ -13,8 +13,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  */
 var core_1 = require('@angular/core');
 var courses_component_1 = require('./courses.component');
+var router_1 = require('@angular/router');
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(router) {
     }
     AppComponent = __decorate([
         core_1.Component({
@@ -22,7 +23,7 @@ var AppComponent = (function () {
             templateUrl: 'partials/app_root.html',
             providers: [courses_component_1.CoursesComponent]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], AppComponent);
     return AppComponent;
 }());
