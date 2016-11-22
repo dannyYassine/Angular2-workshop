@@ -19,6 +19,8 @@ var shot_component_1 = require("./components/shot.component");
 var routes = [
     { path: 'dribbble', component: dribbble_component_1.DribbbleComponent },
     { path: 'courses', component: courses_component_1.CoursesComponent },
+    { path: 'shots', component: dribbble_component_1.DribbbleComponent },
+    { path: 'about', component: dribbble_component_1.DribbbleComponent },
     { path: 'dribbble/:id', component: shot_component_1.ShotComponent }
 ];
 var AppRoutingModule = (function () {

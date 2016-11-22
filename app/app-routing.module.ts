@@ -11,8 +11,9 @@ import {ShotComponent} from "./components/shot.component";
 const routes: Routes = [
     { path: 'dribbble', component: DribbbleComponent },
     { path: 'courses', component: CoursesComponent },
+    { path: 'shots', component: DribbbleComponent },
+    { path: 'about', component: DribbbleComponent },
     { path: 'dribbble/:id', component: ShotComponent }
-
 ];
 
 @NgModule({

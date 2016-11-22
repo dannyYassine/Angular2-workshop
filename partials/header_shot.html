@@ -1,0 +1,7 @@
+<h2>Detail Shot</h2>
+{{ shot.id }}
+<div class="thumbnail">
+    <h2>{{ shot.user.name }}</h2>
+    <h4>{{ shot.title }}</h4>
+    <img src="{{ shot.images.hidpi ? shot.images.hidpi : shot.images.normal }}" height="300">
+</div>

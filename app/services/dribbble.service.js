@@ -38,6 +38,13 @@ var DribbbleService = (function () {
             return json;
         });
     };
+    DribbbleService.prototype.getComments = function (shotId) {
+        return this.http.get("https://api.dribbble.com/v1/shots/" + shotId + "/comments?access_token=f0f2799e131f9e82942d9c8af209cbcbc176cdd5c12619e5161c7f1fdf4ded55&page")
+            .map(function (response) { return response.json(); })
+            .map(function (json) {
+            return json;
+        });
+    };
     DribbbleService.prototype.getCourses = function () {
         return ["Course1", "Course2", "Course3"];
     };

@@ -22,6 +22,8 @@ var CoursesComponent = (function () {
     CoursesComponent.prototype.ngOnInit = function () {
         this.courses = this.courseService.getCourses();
     };
+    CoursesComponent.prototype.ngOnDestroy = function () {
+    };
     CoursesComponent = __decorate([
         core_1.Component({
             selector: 'courses',

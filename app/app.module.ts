@@ -12,11 +12,28 @@ import {CourseService} from './services/course.service'
 import {AppRoutingModule} from './app-routing.module'
 import {DribbbleComponent} from './components/dribbble.component'
 import {ShotComponent} from "./components/shot.component";
+import {DetailShotComponent} from './components/detail_shot.component';
+import {CommentListComponent} from './components/comment_list.component';
 
 @NgModule({
-    imports:      [ BrowserModule, HttpModule, AppRoutingModule],
-    declarations: [ AppComponent, CoursesComponent, DribbbleComponent, ShotComponent ],
-    bootstrap:    [ AppComponent ],
-    providers: [ CourseService, DribbbleService ]
+    imports:      [
+        BrowserModule,
+        HttpModule,
+        AppRoutingModule
+    ],
+    declarations: [
+        AppComponent,
+        CoursesComponent,
+        DribbbleComponent,
+        ShotComponent,
+        DetailShotComponent,
+        CommentListComponent
+    ],
+    bootstrap:    [
+        AppComponent
+    ],
+    providers: [
+        CourseService,
+        DribbbleService ]
 })
 export class AppModule { }

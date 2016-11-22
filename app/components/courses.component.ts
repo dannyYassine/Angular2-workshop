@@ -25,4 +25,9 @@ export class CoursesComponent {
     ngOnInit() {
         this.courses = this.courseService.getCourses();
     }
+
+    ngOnDestroy() {
+
+    }
+
 }

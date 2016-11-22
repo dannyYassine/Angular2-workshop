@@ -21,15 +21,32 @@ var course_service_1 = require('./services/course.service');
 var app_routing_module_1 = require('./app-routing.module');
 var dribbble_component_1 = require('./components/dribbble.component');
 var shot_component_1 = require("./components/shot.component");
+var detail_shot_component_1 = require('./components/detail_shot.component');
+var comment_list_component_1 = require('./components/comment_list.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, app_routing_module_1.AppRoutingModule],
-            declarations: [app_component_1.AppComponent, courses_component_1.CoursesComponent, dribbble_component_1.DribbbleComponent, shot_component_1.ShotComponent],
-            bootstrap: [app_component_1.AppComponent],
-            providers: [course_service_1.CourseService, dribbble_service_1.DribbbleService]
+            imports: [
+                platform_browser_1.BrowserModule,
+                http_1.HttpModule,
+                app_routing_module_1.AppRoutingModule
+            ],
+            declarations: [
+                app_component_1.AppComponent,
+                courses_component_1.CoursesComponent,
+                dribbble_component_1.DribbbleComponent,
+                shot_component_1.ShotComponent,
+                detail_shot_component_1.DetailShotComponent,
+                comment_list_component_1.CommentListComponent
+            ],
+            bootstrap: [
+                app_component_1.AppComponent
+            ],
+            providers: [
+                course_service_1.CourseService,
+                dribbble_service_1.DribbbleService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

@@ -7,7 +7,7 @@
 6 silly lifecycle angular2@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle angular2@1.0.0~start: angular2@1.0.0
 8 verbose lifecycle angular2@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle angular2@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/dannyyassine/WebstormProjects/angular2/node_modules/.bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin
+9 verbose lifecycle angular2@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/dannyyassine/WebstormProjects/angular2/node_modules/.bin:/usr/local/lib:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin
 10 verbose lifecycle angular2@1.0.0~start: CWD: /Users/dannyyassine/WebstormProjects/angular2
 11 silly lifecycle angular2@1.0.0~start: Args: [ '-c', 'tsc && concurrently "tsc -w" "lite-server" ' ]
 12 silly lifecycle angular2@1.0.0~start: Returned: code: 2  signal: null

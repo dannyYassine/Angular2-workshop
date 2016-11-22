@@ -4,7 +4,6 @@
 
 import {Component} from '@angular/core'
 import {DribbbleService} from './../services/dribbble.service'
-import {Router} from '@angular/router'
 
 @Component({
     selector: 'courses',
@@ -23,7 +22,6 @@ export class DribbbleComponent {
     ngOnInit() {
         this.dribbbleService.getShots().subscribe(json => {
             this.shots = json;
-            console.log(json);
             this.page += 1;
         });
     }

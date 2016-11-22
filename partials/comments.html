@@ -1,0 +1,8 @@
+<h2>Comments</h2>
+<li *ngFor="let comment of comments">
+    <img class="img-circle img-thumbnail img-100 inline" src="{{ comment.user.avatar_url }}">
+    <h3 class="inline">{{ comment.user.name }}</h3>
+    <div>
+        <p class="comment-body">{{ comment.body }}</p>
+    </div>
+</li>

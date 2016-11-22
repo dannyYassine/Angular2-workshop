@@ -4,6 +4,8 @@
 import {Component} from '@angular/core'
 import {DribbbleService} from './../services/dribbble.service'
 import {ActivatedRoute} from '@angular/router'
+import {DetailShotComponent} from "./detail_shot.component";
+import {CommentListComponent} from "./comment_list.component";
 
 @Component({
     templateUrl: 'partials/shot.html',
@@ -12,23 +14,29 @@ import {ActivatedRoute} from '@angular/router'
 export class ShotComponent {
 
     shot: any;
+    comments;
 
-    constructor(private dribbbleService: DribbbleService, private route: ActivatedRoute) {
+    constructor(private dribbbleService: DribbbleService, private route: ActivatedRoute) {}
+
+    ngOnInit() {
         let shotId = this.route.params['value'].id;
-        console.log(shotId);
+
         this.dribbbleService.getShot(shotId).subscribe(json => {
             this.shot = json;
-            console.log(this.shot)
+            console.log(json);
+        });
+
+        this.dribbbleService.getComments(shotId).subscribe(json => {
+            this.comments = json;
         })
     }
 
-    // ngOnInit() {
-    //     let shotId = this.route.params['value'].id;
-    //     console.log(shotId);
-    //     this.dribbbleService.getShot(shotId).subscribe(json => {
-    //         this.shot = json;
-    //         console.log(this.shot)
-    //     })
-    // }
+    ngOnChanges(changes) {
+        console.log(changes);
+    }
+
+    ngOnDestroy() {
+        console.log("destroy");
+    }
 
 }
