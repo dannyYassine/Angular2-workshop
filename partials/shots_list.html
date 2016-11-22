@@ -1,12 +1,14 @@
-<div>
+<div class="">
     <ul class="thumbnails">
-        <li class="thumbnail col-lg-6" *ngFor="let shot of shots">
+        <li class="thumbnail col-sm-3 h-300 p-20 w-30%" *ngFor="let shot of shots">
             <a routerLink="/dribbble/{{shot.id}}">
                 <h2>{{ shot.user.name }}</h2>
                 <h4>{{ shot.title }}</h4>
-                <img src="{{ shot.images.hidpi ? shot.images.hidpi : shot.images.normal }}" height="300">
+                <img src="{{ shot.images.hidpi ? shot.images.hidpi : shot.images.normal }}">
             </a>
         </li>
     </ul>
 </div>
-<button class="btn btn-primary" (click)="loadNextPage()">Load Mode</button>
+<div>
+    <button class="btn btn-primary center-block" (click)="loadNextPage()">Load Mode</button>
+</div>

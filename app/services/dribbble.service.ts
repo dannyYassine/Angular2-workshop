@@ -4,10 +4,11 @@
 import { Injectable }     from '@angular/core';
 import {Http, Response, Headers, RequestOptions, RequestOptionsArgs, URLSearchParams } from '@angular/http';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/catch';
 import {Observable} from 'rxjs/Rx';
 import {DribbbleRequestOptions} from '../interfaceImpl/DribbbleRequestOptions';
-
+import {Shot} from '../models/Shot'
 @Injectable()
 export class DribbbleService {
 
@@ -15,7 +16,7 @@ export class DribbbleService {
 
     }
 
-    public getShots(page: number = 1): Observable<any> {
+    public getShots(page: number = 1): Observable<Array<Shot>> {
 
         let searchParams = new URLSearchParams();
         searchParams.set('page', page.toString());
@@ -26,22 +27,23 @@ export class DribbbleService {
             .map(json => {
                 return json;
             });
-        
     }
 
-    public getShot(shotId: number): Observable<any> {
+    public getShot(shotId: number): Observable<Shot> {
 
         let options = new DribbbleRequestOptions(new URLSearchParams());
+
+        this.http.get(`https://api.dribbble.com/v1/shots/${shotId}`, options).toPromise().then();
 
         return this.http.get(`https://api.dribbble.com/v1/shots/${shotId}`, options)
             .map(response => response.json())
             .map(json => {
-                return json;
+                return new Shot(json);
             });
 
     }
 
-    public getComments(shotId: number): Observable<any> {
+    public getComments(shotId: number): Observable<Array<Comment>> {
         let options = new DribbbleRequestOptions(new URLSearchParams());
 
         return this.http.get(`https://api.dribbble.com/v1/shots/${shotId}/comments`, options)

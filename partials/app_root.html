@@ -1,7 +1,17 @@
-<a routerLink="/dribbble">Dribbble</a>
-<a routerLink="/courses">Courses</a>
-<a routerLink="/about">About</a>
-<a routerLink="/shots">Shots</a>
-<div>
+<ul class="nav-ul">
+    <li>
+        <a [routerLink]="['/dribbble']" [routerLinkActive]="['active']">Dribbble</a>
+    </li>
+    <li>
+        <a routerLink="/courses" [routerLinkActive]="['active']">Courses</a>
+    </li>
+    <li>
+        <a routerLink="/about" [routerLinkActive]="['active']">About</a>
+    </li>
+    <li>
+        <a routerLink="/shots" [routerLinkActive]="['active']">Shots</a>
+    </li>
+</ul>
+<div class="content">
     <router-outlet></router-outlet>
 </div>

@@ -14,8 +14,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 require('rxjs/add/operator/map');
+require('rxjs/add/operator/toPromise');
 require('rxjs/add/operator/catch');
 var DribbbleRequestOptions_1 = require('../interfaceImpl/DribbbleRequestOptions');
+var Shot_1 = require('../models/Shot');
 var DribbbleService = (function () {
     function DribbbleService(http) {
         this.http = http;
@@ -33,10 +35,11 @@ var DribbbleService = (function () {
     };
     DribbbleService.prototype.getShot = function (shotId) {
         var options = new DribbbleRequestOptions_1.DribbbleRequestOptions(new http_1.URLSearchParams());
+        this.http.get("https://api.dribbble.com/v1/shots/" + shotId, options).toPromise().then();
         return this.http.get("https://api.dribbble.com/v1/shots/" + shotId, options)
             .map(function (response) { return response.json(); })
             .map(function (json) {
-            return json;
+            return new Shot_1.Shot(json);
         });
     };
     DribbbleService.prototype.getComments = function (shotId) {
