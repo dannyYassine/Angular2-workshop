@@ -15,31 +15,40 @@ var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 require('rxjs/add/operator/map');
 require('rxjs/add/operator/catch');
+var DribbbleRequestOptions = (function () {
+    function DribbbleRequestOptions(searchParams) {
+        this.searchParams = searchParams;
+        searchParams.set('access_token', 'f0f2799e131f9e82942d9c8af209cbcbc176cdd5c12619e5161c7f1fdf4ded55');
+        this.search = searchParams;
+    }
+    return DribbbleRequestOptions;
+}());
 var DribbbleService = (function () {
     function DribbbleService(http) {
         this.http = http;
     }
     DribbbleService.prototype.getShots = function (page) {
         if (page === void 0) { page = 1; }
-        var params = {
-            access_token: 'f0f2799e131f9e82942d9c8af209cbcbc176cdd5c12619e5161c7f1fdf4ded55',
-            callback: 'JSON_CALLBACK'
-        };
-        return this.http.get("https://api.dribbble.com/v1/shots?access_token=f0f2799e131f9e82942d9c8af209cbcbc176cdd5c12619e5161c7f1fdf4ded55&page=" + page)
+        var searchParams = new http_1.URLSearchParams();
+        searchParams.set('page', page);
+        var options = new DribbbleRequestOptions(searchParams);
+        return this.http.get("https://api.dribbble.com/v1/shots", options)
             .map(function (response) { return response.json(); })
             .map(function (json) {
             return json;
         });
     };
     DribbbleService.prototype.getShot = function (shotId) {
-        return this.http.get("https://api.dribbble.com/v1/shots/" + shotId + "?access_token=f0f2799e131f9e82942d9c8af209cbcbc176cdd5c12619e5161c7f1fdf4ded55&page")
+        var options = new DribbbleRequestOptions(new http_1.URLSearchParams());
+        return this.http.get("https://api.dribbble.com/v1/shots/" + shotId, options)
             .map(function (response) { return response.json(); })
             .map(function (json) {
             return json;
         });
     };
     DribbbleService.prototype.getComments = function (shotId) {
-        return this.http.get("https://api.dribbble.com/v1/shots/" + shotId + "/comments?access_token=f0f2799e131f9e82942d9c8af209cbcbc176cdd5c12619e5161c7f1fdf4ded55&page")
+        var options = new DribbbleRequestOptions(new http_1.URLSearchParams());
+        return this.http.get("https://api.dribbble.com/v1/shots/" + shotId + "/comments", options)
             .map(function (response) { return response.json(); })
             .map(function (json) {
             return json;

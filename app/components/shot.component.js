@@ -14,7 +14,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var dribbble_service_1 = require('./../services/dribbble.service');
 var router_1 = require('@angular/router');
-var detail_shot_component_1 = require("./detail_shot.component");
 var ShotComponent = (function () {
     function ShotComponent(dribbbleService, route) {
         this.dribbbleService = dribbbleService;
@@ -40,7 +39,7 @@ var ShotComponent = (function () {
     ShotComponent = __decorate([
         core_1.Component({
             templateUrl: 'partials/shot.html',
-            providers: [dribbble_service_1.DribbbleService, detail_shot_component_1.DetailShotComponent]
+            providers: [dribbble_service_1.DribbbleService]
         }), 
         __metadata('design:paramtypes', [dribbble_service_1.DribbbleService, router_1.ActivatedRoute])
     ], ShotComponent);

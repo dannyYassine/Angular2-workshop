@@ -2,35 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8960ab-3d37-453a-a685-cec98a44ffc9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/comment_list.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/detail_shot.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/comments.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/header_shot.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app-routing.module.js" afterPath="$PROJECT_DIR$/app/app-routing.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app-routing.module.js.map" afterPath="$PROJECT_DIR$/app/app-routing.module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app-routing.module.ts" afterPath="$PROJECT_DIR$/app/app-routing.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.module.js" afterPath="$PROJECT_DIR$/app/app.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.module.js.map" afterPath="$PROJECT_DIR$/app/app.module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.module.ts" afterPath="$PROJECT_DIR$/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/app.component.js" afterPath="$PROJECT_DIR$/app/components/app.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/app.component.js.map" afterPath="$PROJECT_DIR$/app/components/app.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/app.component.ts" afterPath="$PROJECT_DIR$/app/components/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/courses.component.js" afterPath="$PROJECT_DIR$/app/components/courses.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/courses.component.js.map" afterPath="$PROJECT_DIR$/app/components/courses.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/courses.component.ts" afterPath="$PROJECT_DIR$/app/components/courses.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/dribbble.component.js" afterPath="$PROJECT_DIR$/app/components/dribbble.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/dribbble.component.js.map" afterPath="$PROJECT_DIR$/app/components/dribbble.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/dribbble.component.ts" afterPath="$PROJECT_DIR$/app/components/dribbble.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/shot.component.js" afterPath="$PROJECT_DIR$/app/components/shot.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/shot.component.js.map" afterPath="$PROJECT_DIR$/app/components/shot.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/shot.component.ts" afterPath="$PROJECT_DIR$/app/components/shot.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/dribbble.service.js" afterPath="$PROJECT_DIR$/app/services/dribbble.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/dribbble.service.js.map" afterPath="$PROJECT_DIR$/app/services/dribbble.service.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/dribbble.service.ts" afterPath="$PROJECT_DIR$/app/services/dribbble.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="$PROJECT_DIR$/npm-debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/app_root.html" afterPath="$PROJECT_DIR$/partials/app_root.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/shot.html" afterPath="$PROJECT_DIR$/partials/shot.html" />
     </list>
     <ignored path="angular2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,23 +29,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="shot.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/components/shot.component.ts">
+      <file leaf-file-name="dribbble.service.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/services/dribbble.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="240">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
-                <element signature="e#50#89#0" expanded="true" />
+                <element signature="e#50#97#0" expanded="true" />
+                <marker date="1479818593000" expanded="true" signature="1842:1903" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shot.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/shot.html">
+      <file leaf-file-name="courses.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/courses.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            <state relative-caret-position="208">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -85,6 +64,38 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="http.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@angular/http/src/http.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interfaces.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@angular/http/src/interfaces.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="49" column="11" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shot.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/shot.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#50#89#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="comment_list.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/comment_list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,21 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comments.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/comments.html">
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header_shot.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/header_shot.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            <state relative-caret-position="128">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -125,31 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="course_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/course_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commentItem.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/commentItem.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dribbble.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/dribbble.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+            <state relative-caret-position="304">
+              <caret line="21" column="16" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="16" />
               <folding>
                 <element signature="e#51#90#0" expanded="true" />
               </folding>
@@ -196,7 +177,6 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/partials/shots_list.html" />
         <option value="$PROJECT_DIR$/app/components/dribbble.component.ts" />
-        <option value="$PROJECT_DIR$/app/services/dribbble.service.ts" />
         <option value="$PROJECT_DIR$/app/components/courses.component.ts" />
         <option value="$PROJECT_DIR$/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/partials/app_root.html" />
@@ -208,6 +188,7 @@
         <option value="$PROJECT_DIR$/partials/shot.html" />
         <option value="$PROJECT_DIR$/app/components/comment_list.component.ts" />
         <option value="$PROJECT_DIR$/app/components/shot.component.ts" />
+        <option value="$PROJECT_DIR$/app/services/dribbble.service.ts" />
       </list>
     </option>
   </component>
@@ -425,12 +406,12 @@
       <workItem from="1479345697081" duration="7215000" />
       <workItem from="1479564725553" duration="103000" />
       <workItem from="1479691972789" duration="1589000" />
-      <workItem from="1479699142287" duration="5956000" />
+      <workItem from="1479699142287" duration="7635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23636000" />
+    <option name="totallyTimeSpent" value="25315000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -480,13 +461,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/services/course.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -521,13 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular/http/src/http.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="80" column="7" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -692,30 +659,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/courses.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/course.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/dribbble.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="e#50#97#0" expanded="true" />
-            <marker date="1479692827000" expanded="true" signature="1607:1668" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,31 +699,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#50#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/app-routing.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/dribbble.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="e#51#90#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,12 +739,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/partials/shot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="80">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/http/src/http.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/http/src/interfaces.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="49" column="11" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/dribbble.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="16" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="16" />
           <folding>
-            <element signature="e#51#97#0" expanded="true" />
+            <element signature="e#51#90#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -829,10 +781,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/shot.html">
+    <entry file="file://$PROJECT_DIR$/app/components/courses.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="208">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -847,10 +807,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/shot.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="192">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#50#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#51#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/dribbble.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#97#0" expanded="true" />
+            <marker date="1479818593000" expanded="true" signature="1842:1903" placeholder="..." />
           </folding>
         </state>
       </provider>
