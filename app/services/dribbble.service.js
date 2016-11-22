@@ -15,14 +15,7 @@ var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 require('rxjs/add/operator/map');
 require('rxjs/add/operator/catch');
-var DribbbleRequestOptions = (function () {
-    function DribbbleRequestOptions(searchParams) {
-        this.searchParams = searchParams;
-        searchParams.set('access_token', 'f0f2799e131f9e82942d9c8af209cbcbc176cdd5c12619e5161c7f1fdf4ded55');
-        this.search = searchParams;
-    }
-    return DribbbleRequestOptions;
-}());
+var DribbbleRequestOptions_1 = require('../interfaceImpl/DribbbleRequestOptions');
 var DribbbleService = (function () {
     function DribbbleService(http) {
         this.http = http;
@@ -30,8 +23,8 @@ var DribbbleService = (function () {
     DribbbleService.prototype.getShots = function (page) {
         if (page === void 0) { page = 1; }
         var searchParams = new http_1.URLSearchParams();
-        searchParams.set('page', page);
-        var options = new DribbbleRequestOptions(searchParams);
+        searchParams.set('page', page.toString());
+        var options = new DribbbleRequestOptions_1.DribbbleRequestOptions(searchParams);
         return this.http.get("https://api.dribbble.com/v1/shots", options)
             .map(function (response) { return response.json(); })
             .map(function (json) {
@@ -39,7 +32,7 @@ var DribbbleService = (function () {
         });
     };
     DribbbleService.prototype.getShot = function (shotId) {
-        var options = new DribbbleRequestOptions(new http_1.URLSearchParams());
+        var options = new DribbbleRequestOptions_1.DribbbleRequestOptions(new http_1.URLSearchParams());
         return this.http.get("https://api.dribbble.com/v1/shots/" + shotId, options)
             .map(function (response) { return response.json(); })
             .map(function (json) {
@@ -47,7 +40,7 @@ var DribbbleService = (function () {
         });
     };
     DribbbleService.prototype.getComments = function (shotId) {
-        var options = new DribbbleRequestOptions(new http_1.URLSearchParams());
+        var options = new DribbbleRequestOptions_1.DribbbleRequestOptions(new http_1.URLSearchParams());
         return this.http.get("https://api.dribbble.com/v1/shots/" + shotId + "/comments", options)
             .map(function (response) { return response.json(); })
             .map(function (json) {

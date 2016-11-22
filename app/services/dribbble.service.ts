@@ -6,18 +6,7 @@ import {Http, Response, Headers, RequestOptions, RequestOptionsArgs, URLSearchPa
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import {Observable} from 'rxjs/Rx';
-
-class DribbbleRequestOptions implements RequestOptionsArgs {
-
-    search?: URLSearchParams;
-
-    constructor(private searchParams) {
-        searchParams.set('access_token', 'f0f2799e131f9e82942d9c8af209cbcbc176cdd5c12619e5161c7f1fdf4ded55');
-        this.search = searchParams;
-    }
-
-}
-
+import {DribbbleRequestOptions} from '../interfaceImpl/DribbbleRequestOptions';
 
 @Injectable()
 export class DribbbleService {
@@ -29,7 +18,7 @@ export class DribbbleService {
     public getShots(page: number = 1): Observable<any> {
 
         let searchParams = new URLSearchParams();
-        searchParams.set('page', page);
+        searchParams.set('page', page.toString());
         let options = new DribbbleRequestOptions(searchParams);
 
         return this.http.get(`https://api.dribbble.com/v1/shots`, options)
