@@ -22,7 +22,7 @@ app.get('*', function(req, res) {
 });
 
 // listen (start app with node server.js) ======================================
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3002);
 var server = app.listen(app.get('port'), function () {
     console.log("/****************************************/");
     console.log('server listening on port ' + server.address().port);

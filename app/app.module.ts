@@ -14,6 +14,7 @@ import {DribbbleComponent} from './components/dribbble.component'
 import {ShotComponent} from "./components/shot.component";
 import {DetailShotComponent} from './components/detail_shot.component';
 import {CommentListComponent} from './components/comment_list.component';
+import {HomeComponent} from "./components/home.component";
 
 @NgModule({
     imports:      [
@@ -27,7 +28,8 @@ import {CommentListComponent} from './components/comment_list.component';
         DribbbleComponent,
         ShotComponent,
         DetailShotComponent,
-        CommentListComponent
+        CommentListComponent,
+        HomeComponent
     ],
     bootstrap:    [
         AppComponent

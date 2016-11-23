@@ -7,8 +7,10 @@ import {RouterModule, Routes} from '@angular/router'
 import { CoursesComponent } from './components/courses.component'
 import { DribbbleComponent } from './components/dribbble.component'
 import {ShotComponent} from "./components/shot.component";
+import {HomeComponent} from "./components/home.component";
 
 const routes: Routes = [
+    { path: '', component: HomeComponent },
     { path: 'dribbble', component: DribbbleComponent },
     { path: 'courses', component: CoursesComponent },
     { path: 'shots', component: DribbbleComponent },

@@ -43,6 +43,9 @@
     "@types/node": "^6.0.45",
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
-    "typescript": "^2.0.3"
+    "typescript": "^2.0.3",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2",
+    "gulp-typescript": ""
   }
 }
