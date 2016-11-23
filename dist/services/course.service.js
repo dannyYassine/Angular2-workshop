@@ -25,3 +25,5 @@ var CourseService = (function () {
     return CourseService;
 }());
 exports.CourseService = CourseService;
+
+//# sourceMappingURL=../../dist/services/course.service.js.map

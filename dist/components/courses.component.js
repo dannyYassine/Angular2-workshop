@@ -35,3 +35,5 @@ var CoursesComponent = (function () {
     return CoursesComponent;
 }());
 exports.CoursesComponent = CoursesComponent;
+
+//# sourceMappingURL=../../dist/components/courses.component.js.map

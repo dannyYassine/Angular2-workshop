@@ -31,3 +31,5 @@ var CommentListComponent = (function () {
     return CommentListComponent;
 }());
 exports.CommentListComponent = CommentListComponent;
+
+//# sourceMappingURL=../../dist/components/comment_list.component.js.map

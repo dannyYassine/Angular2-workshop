@@ -9,3 +9,5 @@ var Shot = (function () {
     return Shot;
 }());
 exports.Shot = Shot;
+
+//# sourceMappingURL=../../dist/models/Shot.js.map

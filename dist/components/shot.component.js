@@ -46,3 +46,5 @@ var ShotComponent = (function () {
     return ShotComponent;
 }());
 exports.ShotComponent = ShotComponent;
+
+//# sourceMappingURL=../../dist/components/shot.component.js.map

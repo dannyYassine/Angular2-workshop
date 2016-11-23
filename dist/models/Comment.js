@@ -9,3 +9,5 @@ var Comment = (function () {
     return Comment;
 }());
 exports.Comment = Comment;
+
+//# sourceMappingURL=../../dist/models/Comment.js.map

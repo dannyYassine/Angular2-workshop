@@ -32,3 +32,5 @@ var DetailShotComponent = (function () {
     return DetailShotComponent;
 }());
 exports.DetailShotComponent = DetailShotComponent;
+
+//# sourceMappingURL=../../dist/components/detail_shot.component.js.map

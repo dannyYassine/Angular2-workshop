@@ -5,17 +5,20 @@
 var gulp = require('gulp');
 var shell = require('gulp-shell');
 var ts = require('gulp-typescript');
+var sourcemaps = require('gulp-sourcemaps');
 
 // Load tsconfig file
 var tsProject = ts.createProject('tsconfig.json');
 
 gulp.task('serve', function () {
-    
+
 });
 
 gulp.task('compile', function () {
     return gulp.src('app/**/*.ts')
+        .pipe(sourcemaps.init())
         .pipe(tsProject())
+        .pipe(sourcemaps.write('../dist/'))
         .pipe(gulp.dest('dist/'));
 });
 

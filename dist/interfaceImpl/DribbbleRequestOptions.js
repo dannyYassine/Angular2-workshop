@@ -8,3 +8,5 @@ var DribbbleRequestOptions = (function () {
     return DribbbleRequestOptions;
 }());
 exports.DribbbleRequestOptions = DribbbleRequestOptions;
+
+//# sourceMappingURL=../../dist/interfaceImpl/DribbbleRequestOptions.js.map

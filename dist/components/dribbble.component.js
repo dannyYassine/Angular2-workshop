@@ -44,3 +44,5 @@ var DribbbleComponent = (function () {
     return DribbbleComponent;
 }());
 exports.DribbbleComponent = DribbbleComponent;
+
+//# sourceMappingURL=../../dist/components/dribbble.component.js.map

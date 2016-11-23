@@ -55,3 +55,5 @@ var AppModule = (function () {
     return AppModule;
 }());
 exports.AppModule = AppModule;
+
+//# sourceMappingURL=../dist/app.module.js.map

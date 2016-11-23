@@ -60,3 +60,5 @@ var DribbbleService = (function () {
     return DribbbleService;
 }());
 exports.DribbbleService = DribbbleService;
+
+//# sourceMappingURL=../../dist/services/dribbble.service.js.map
