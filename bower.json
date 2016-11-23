@@ -1,0 +1,17 @@
+{
+  "name": "angular2",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Danny Yassine <dannyyassine@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/dannyYassine/Angular2-workshop",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

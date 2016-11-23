@@ -10,7 +10,7 @@ import {Component, Input} from '@angular/core'
 export class DetailShotComponent {
 
     @Input() shot;
-
+    
     constructor() {
 
     }

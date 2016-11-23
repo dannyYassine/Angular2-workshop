@@ -26,7 +26,7 @@ var DribbbleComponent = (function () {
             _this.page += 1;
         });
     };
-    DribbbleComponent.prototype.loadNextPage = function () {
+    DribbbleComponent.prototype.loadNextPage = function (event) {
         var _this = this;
         this.dribbbleService.getShots(this.page).subscribe(function (json) {
             _this.shots = _this.shots.concat(json);

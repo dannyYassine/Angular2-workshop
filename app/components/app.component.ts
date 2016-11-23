@@ -14,4 +14,17 @@ export class AppComponent {
     constructor() {
 
     }
+
+    ngOnInit() {
+        setTimeout(this.dismissLoadingScreen, 1500);
+    }
+
+    private dismissLoadingScreen() {
+        let loadingContainer = document.getElementById("div-loading-container");
+        loadingContainer.classList.add("fade-animation");
+        setTimeout(function() {
+            loadingContainer.remove();
+        }, 500);
+    }
+
 }

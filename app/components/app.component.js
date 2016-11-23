@@ -16,6 +16,16 @@ var courses_component_1 = require('./courses.component');
 var AppComponent = (function () {
     function AppComponent() {
     }
+    AppComponent.prototype.ngOnInit = function () {
+        setTimeout(this.dismissLoadingScreen, 1500);
+    };
+    AppComponent.prototype.dismissLoadingScreen = function () {
+        var loadingContainer = document.getElementById("div-loading-container");
+        loadingContainer.classList.add("fade-animation");
+        setTimeout(function () {
+            loadingContainer.remove();
+        }, 500);
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',

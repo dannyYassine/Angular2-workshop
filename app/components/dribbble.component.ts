@@ -4,6 +4,7 @@
 
 import {Component} from '@angular/core'
 import {DribbbleService} from './../services/dribbble.service'
+import {Shot} from "../models/Shot";
 
 @Component({
     selector: 'courses',
@@ -11,10 +12,11 @@ import {DribbbleService} from './../services/dribbble.service'
     providers: [DribbbleService]
 })
 export class DribbbleComponent {
-    title:string = "Course title";
-    courses;
-    shots;
-    page = 1;
+
+    public title: string = "Course title";
+    public courses: Array<string>;
+    public shots: Array<Shot>;
+    public page = 1;
 
     constructor(private dribbbleService: DribbbleService) {
     }
@@ -26,7 +28,8 @@ export class DribbbleComponent {
         });
     }
 
-    public loadNextPage() {
+    public loadNextPage(event) {
+
         this.dribbbleService.getShots(this.page).subscribe(json => {
             this.shots = this.shots.concat(json);
             this.page += 1;
