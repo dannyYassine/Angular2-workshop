@@ -16,7 +16,7 @@ export class AppComponent {
     }
 
     ngOnInit() {
-        setTimeout(this.dismissLoadingScreen, 1500);
+        setTimeout(this.dismissLoadingScreen, 1000);
     }
 
     private dismissLoadingScreen() {

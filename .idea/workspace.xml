@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c8960ab-3d37-453a-a685-cec98a44ffc9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/app.component.js" afterPath="$PROJECT_DIR$/app/components/app.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/app.component.js.map" afterPath="$PROJECT_DIR$/app/components/app.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/app.component.ts" afterPath="$PROJECT_DIR$/app/components/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/detail_shot.component.ts" afterPath="$PROJECT_DIR$/app/components/detail_shot.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/dribbble.component.js" afterPath="$PROJECT_DIR$/app/components/dribbble.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/dribbble.component.js.map" afterPath="$PROJECT_DIR$/app/components/dribbble.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/dribbble.component.ts" afterPath="$PROJECT_DIR$/app/components/dribbble.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/main.js.map" afterPath="$PROJECT_DIR$/app/main.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/main.ts" afterPath="$PROJECT_DIR$/app/main.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/app.css" afterPath="$PROJECT_DIR$/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/app_root.html" afterPath="$PROJECT_DIR$/partials/app_root.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/shots_list.html" afterPath="$PROJECT_DIR$/partials/shots_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemjs.config.js" afterPath="$PROJECT_DIR$/systemjs.config.js" />
     </list>
     <ignored path="angular2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="131" column="22" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+            <state relative-caret-position="277">
+              <caret line="132" column="21" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -102,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/components/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -201,8 +186,8 @@
         <option value="$PROJECT_DIR$/systemjs.config.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/components/app.component.ts" />
         <option value="$PROJECT_DIR$/css/app.css" />
+        <option value="$PROJECT_DIR$/app/components/app.component.ts" />
       </list>
     </option>
   </component>
@@ -422,12 +407,12 @@
       <workItem from="1479345697081" duration="7215000" />
       <workItem from="1479564725553" duration="103000" />
       <workItem from="1479691972789" duration="1589000" />
-      <workItem from="1479699142287" duration="20818000" />
+      <workItem from="1479699142287" duration="20894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38498000" />
+    <option name="totallyTimeSpent" value="38574000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -897,18 +882,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="277">
+          <caret line="132" column="21" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/app.css">
+    <entry file="file://$PROJECT_DIR$/app/components/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="131" column="22" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+        <state relative-caret-position="224">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
           <folding />
         </state>
       </provider>
