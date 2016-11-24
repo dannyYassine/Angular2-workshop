@@ -17,7 +17,7 @@ var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent.prototype.ngOnInit = function () {
-        setTimeout(this.dismissLoadingScreen, 1500);
+        setTimeout(this.dismissLoadingScreen, 1000);
     };
     AppComponent.prototype.dismissLoadingScreen = function () {
         var loadingContainer = document.getElementById("div-loading-container");

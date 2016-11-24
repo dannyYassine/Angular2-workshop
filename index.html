@@ -25,12 +25,35 @@
 </head>
 <!-- 3. Display the application -->
 <body>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '1696947580618856',
+            xfbml      : true,
+            version    : 'v2.8'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <my-app></my-app>
 <div id="div-loading-container" class="parent">
     <div class="child">
         <h4>Experience is loading...</h4>
         <div class="loader"></div>
     </div>
+</div>
+<div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
 </div>
 </body>
 </html>
