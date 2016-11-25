@@ -188,3 +188,7 @@ ul .thumbnail li {
 
     margin: -100px 0 0 -50px;
 }
+
+.w-100 {
+    width: 100%
+}

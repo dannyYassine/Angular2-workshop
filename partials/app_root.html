@@ -6,14 +6,20 @@
         <a routerLink="/courses" [routerLinkActive]="['active']">Courses</a>
     </li>
     <li>
-        <a routerLink="/about" [routerLinkActive]="['active']">About</a>
+        <a routerLink="/form" [routerLinkActive]="['active']">Form</a>
     </li>
     <li>
         <a routerLink="/shots" [routerLinkActive]="['active']">Shots</a>
+    </li>
+    <li style="float:right">
+        <div
+                class="fb-like"
+                data-width="600"
+                data-show-faces="true">
+        </div>
     </li>
 </ul>
 <div class="content">
 
     <router-outlet></router-outlet>
-    <div class="fb-comments" data-href="http://angular.us-east-1.elasticbeanstalk.com/" data-width="500" data-numposts="5"></div>
 </div>

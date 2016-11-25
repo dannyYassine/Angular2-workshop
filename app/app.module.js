@@ -16,6 +16,7 @@ var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./components/app.component');
 var courses_component_1 = require('./components/courses.component');
 var http_1 = require('@angular/http');
+var forms_1 = require('@angular/forms');
 var dribbble_service_1 = require('./services/dribbble.service');
 var course_service_1 = require('./services/course.service');
 var app_routing_module_1 = require('./app-routing.module');
@@ -24,6 +25,7 @@ var shot_component_1 = require("./components/shot.component");
 var detail_shot_component_1 = require('./components/detail_shot.component');
 var comment_list_component_1 = require('./components/comment_list.component');
 var home_component_1 = require("./components/home.component");
+var form_component_1 = require("./components/form.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -32,7 +34,8 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 http_1.HttpModule,
-                app_routing_module_1.AppRoutingModule
+                app_routing_module_1.AppRoutingModule,
+                forms_1.FormsModule
             ],
             declarations: [
                 app_component_1.AppComponent,
@@ -41,7 +44,8 @@ var AppModule = (function () {
                 shot_component_1.ShotComponent,
                 detail_shot_component_1.DetailShotComponent,
                 comment_list_component_1.CommentListComponent,
-                home_component_1.HomeComponent
+                home_component_1.HomeComponent,
+                form_component_1.FormComponent
             ],
             bootstrap: [
                 app_component_1.AppComponent

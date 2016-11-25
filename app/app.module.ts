@@ -7,6 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }   from './components/app.component';
 import { CoursesComponent } from './components/courses.component'
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 import {DribbbleService} from './services/dribbble.service'
 import {CourseService} from './services/course.service'
 import {AppRoutingModule} from './app-routing.module'
@@ -15,12 +16,14 @@ import {ShotComponent} from "./components/shot.component";
 import {DetailShotComponent} from './components/detail_shot.component';
 import {CommentListComponent} from './components/comment_list.component';
 import {HomeComponent} from "./components/home.component";
+import {FormComponent} from "./components/form.component";
 
 @NgModule({
     imports:      [
         BrowserModule,
         HttpModule,
-        AppRoutingModule
+        AppRoutingModule,
+        FormsModule
     ],
     declarations: [
         AppComponent,
@@ -29,7 +32,8 @@ import {HomeComponent} from "./components/home.component";
         ShotComponent,
         DetailShotComponent,
         CommentListComponent,
-        HomeComponent
+        HomeComponent,
+        FormComponent
     ],
     bootstrap:    [
         AppComponent

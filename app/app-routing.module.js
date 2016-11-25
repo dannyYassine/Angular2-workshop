@@ -17,12 +17,13 @@ var courses_component_1 = require('./components/courses.component');
 var dribbble_component_1 = require('./components/dribbble.component');
 var shot_component_1 = require("./components/shot.component");
 var home_component_1 = require("./components/home.component");
+var form_component_1 = require("./components/form.component");
 var routes = [
     { path: '', component: home_component_1.HomeComponent },
     { path: 'dribbble', component: dribbble_component_1.DribbbleComponent },
     { path: 'courses', component: courses_component_1.CoursesComponent },
     { path: 'shots', component: dribbble_component_1.DribbbleComponent },
-    { path: 'about', component: dribbble_component_1.DribbbleComponent },
+    { path: 'form', component: form_component_1.FormComponent },
     { path: 'dribbble/:id', component: shot_component_1.ShotComponent }
 ];
 var AppRoutingModule = (function () {
