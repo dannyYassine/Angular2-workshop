@@ -1,0 +1,10 @@
+branch-defaults:
+  master:
+    environment: angular
+global:
+  application_name: express_api
+  default_ec2_keyname: test
+  default_platform: 64bit Amazon Linux 2016.09 v3.1.0 running Node.js
+  default_region: us-east-1
+  profile: eb-cli
+  sc: git
