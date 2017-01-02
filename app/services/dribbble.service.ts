@@ -16,7 +16,7 @@ export class DribbbleService {
 
     }
 
-    public getShots(page: number = 1): Observable<Array<Shot>> {
+    public getShots(page: number = 1): Observable<Shot[]> {
 
         let searchParams = new URLSearchParams();
         searchParams.set('page', page.toString());

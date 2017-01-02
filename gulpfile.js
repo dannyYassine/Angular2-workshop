@@ -22,6 +22,14 @@ gulp.task('compile', function () {
         .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('cs', function () {
+    return gulp.src('api/**/*.ts')
+        .pipe(sourcemaps.init())
+        .pipe(tsProject())
+        .pipe(sourcemaps.write('../api/'))
+        .pipe(gulp.dest('api/'));
+});
+
 gulp.task('deploy', ['compile'], shell.task([
     'eb deploy --verbose'
 ]));

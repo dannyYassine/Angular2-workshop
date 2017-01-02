@@ -5,8 +5,9 @@ export class Hero {
     constructor(
         public name?: string,
         public nickname?: string,
-        public power?: string
+        public power?: string,
+        public lastName?: string
     ) {
-        
+
     }
 }

@@ -3,13 +3,13 @@
  * Created by dannyyassine on 2016-11-24.
  */
 var Hero = (function () {
-    function Hero(name, nickname, power, lastName) {
+    function Hero(name, nickname, power) {
         this.name = name;
         this.nickname = nickname;
         this.power = power;
-        this.lastName = lastName;
     }
     return Hero;
 }());
 exports.Hero = Hero;
-//# sourceMappingURL=hero.js.map
+
+//# sourceMappingURL=../../dist/models/hero.js.map

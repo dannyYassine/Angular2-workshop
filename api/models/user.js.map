@@ -1,0 +1,1 @@
+{"version":3,"sources":["models/user.ts"],"names":[],"mappings":"AAAA;;GAEG;;AAEH;IACI,cAAmB,IAAY;QAAZ,SAAI,GAAJ,IAAI,CAAQ;IAE/B,CAAC;IACL,WAAC;AAAD,CAJA,AAIC,IAAA;AAJY,YAAI,OAIhB,CAAA","file":"user.js","sourcesContent":["/**\n * Created by dannyyassine on 2016-11-26.\n */\n\nexport class User {\n    constructor(public name: string) {\n        \n    }\n}"]}
