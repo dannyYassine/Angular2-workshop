@@ -20,9 +20,9 @@ app.use(bodyParser.json());                                     // parse applica
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
 app.use(methodOverride());
 
-app.use('/api/*', authentication);
-
 app.use('/api', users);
+
+app.use('/api/*', authentication);
 
 app.get('*', function(req, res) {
     res.sendfile('./index.html'); // load the single view file (angular will handle the page changes on the front-end)

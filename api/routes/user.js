@@ -25,8 +25,7 @@ router.route('/users/:name')
         jwt.sign(user, 'secret', { algorithm: 'HS256' }, function(err, token) {
             response.json({error: err, token: token});
         });
-
-
+        
     })
 
 module.exports = router;
