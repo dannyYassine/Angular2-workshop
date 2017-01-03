@@ -31,7 +31,7 @@ var ShotComponent = (function () {
         });
     };
     ShotComponent.prototype.ngOnChanges = function (changes) {
-        console.log(changes);
+        console.log("changes", changes);
     };
     ShotComponent.prototype.ngOnDestroy = function () {
         console.log("destroy");

@@ -6,6 +6,7 @@ import {DribbbleService} from './../services/dribbble.service'
 import {ActivatedRoute} from '@angular/router'
 import {DetailShotComponent} from "./detail_shot.component";
 import {CommentListComponent} from "./comment_list.component";
+import {Shot} from '../models/Shot'
 
 @Component({
     templateUrl: 'partials/shot.html',
@@ -13,7 +14,7 @@ import {CommentListComponent} from "./comment_list.component";
 })
 export class ShotComponent {
 
-    shot: any;
+    shot: Shot;
     comments;
 
     constructor(private dribbbleService: DribbbleService, private route: ActivatedRoute) {}
@@ -32,7 +33,7 @@ export class ShotComponent {
     }
 
     ngOnChanges(changes) {
-        console.log(changes);
+        console.log("changes", changes);
     }
 
     ngOnDestroy() {

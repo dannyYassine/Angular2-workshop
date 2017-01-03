@@ -22,10 +22,21 @@ export class DribbbleComponent {
     }
 
     ngOnInit() {
-        this.dribbbleService.getShots().subscribe(json => {
-            this.shots = json;
+
+        console.log(this.dribbbleService.shots);
+        if (this.dribbbleService.shots != null) {
+            this.shots = this.dribbbleService.shots;
             this.page += 1;
-        });
+        } else {
+            this.dribbbleService.getShots().subscribe(json => {
+                this.shots = json;
+                this.page += 1;
+            });
+        }
+    }
+
+    ngOnDestroy() {
+        console.log("Dribbble Component destroy");
     }
 
     public loadNextPage(event) {

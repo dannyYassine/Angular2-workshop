@@ -21,10 +21,20 @@ var DribbbleComponent = (function () {
     }
     DribbbleComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.dribbbleService.getShots().subscribe(function (json) {
-            _this.shots = json;
-            _this.page += 1;
-        });
+        console.log(this.dribbbleService.shots);
+        if (this.dribbbleService.shots != null) {
+            this.shots = this.dribbbleService.shots;
+            this.page += 1;
+        }
+        else {
+            this.dribbbleService.getShots().subscribe(function (json) {
+                _this.shots = json;
+                _this.page += 1;
+            });
+        }
+    };
+    DribbbleComponent.prototype.ngOnDestroy = function () {
+        console.log("Dribbble Component destroy");
     };
     DribbbleComponent.prototype.loadNextPage = function (event) {
         var _this = this;

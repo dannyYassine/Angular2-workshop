@@ -9,11 +9,13 @@ import 'rxjs/add/operator/catch';
 import {Observable} from 'rxjs/Rx';
 import {DribbbleRequestOptions} from '../interfaceImpl/DribbbleRequestOptions';
 import {Shot} from '../models/Shot'
+
 @Injectable()
 export class DribbbleService {
 
-    constructor(private http: Http) {
+    public shots: Shot[];
 
+    constructor(private http: Http) {
     }
 
     public getShots(page: number = 1): Observable<Shot[]> {
@@ -25,6 +27,10 @@ export class DribbbleService {
         return this.http.get(`https://api.dribbble.com/v1/shots`, options)
             .map(response => response.json())
             .map(json => {
+                if (this.shots == null) { this.shots = [] }
+
+                this.shots = this.shots.concat(json);
+                console.log(this.shots);
                 return json;
             });
     }

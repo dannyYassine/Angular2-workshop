@@ -23,6 +23,7 @@ var DribbbleService = (function () {
         this.http = http;
     }
     DribbbleService.prototype.getShots = function (page) {
+        var _this = this;
         if (page === void 0) { page = 1; }
         var searchParams = new http_1.URLSearchParams();
         searchParams.set('page', page.toString());
@@ -30,6 +31,11 @@ var DribbbleService = (function () {
         return this.http.get("https://api.dribbble.com/v1/shots", options)
             .map(function (response) { return response.json(); })
             .map(function (json) {
+            if (_this.shots == null) {
+                _this.shots = [];
+            }
+            _this.shots = _this.shots.concat(json);
+            console.log(_this.shots);
             return json;
         });
     };
