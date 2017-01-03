@@ -35,5 +35,5 @@ gulp.task('deploy', ['compile'], shell.task([
 ]));
 
 gulp.task('default', ['deploy'], function() {
-
+    console.log("Deployed!");
 });
